@@ -1,0 +1,19 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJwtisEJwCAMAFfJAJ3AVUoJInkEatSY9CPu3kD7uzvuXPuA1ZUezMW4SYL1AUqulOCXm6eRxOuTNB6WUEvAMpyVsGsrrlQj7n29l40hfg==": "action_inquire_procurement",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM6+wNLMoNb6gKD+5tCg1FyhYS5yJ2HQSZ3wsAOLLRsw=": "action_listen",
+    "eJwtisEJwCAMAFfJAJ0gq5QiIikENEqM/Uh2b6D93R13bj9gD6Un5WLcBWF/kCQ3Qvil8jSSeNckjYcl1BBurkaahvaylFq06X69lrIheg==": "action_filter_procurements",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohLTOnJLUovqAoP7m0KDUXKFZcS5yJ2HQSZ3wsAN4qRsA=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fnpqXWpSYE5+Zl5ZfWxsLADFQH/U=": "utter_general_info",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fnpqXWpSYE5+Zl5ZfS8C40pKS1CJUHUSYGQsA+etASQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fkV8eX5lfGl+eX5RdWxsLADPWIDg=": "utter_how_you_work",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fkV8eX5lfGl+eX5RdS8C40pKS1CJUHUSYGQsAIG5BEg==": "action_listen",
+    "eJwtytEJwCAMRdFVMkAncBUpIuF9BGqUqKUg7t5A+3cP3Lj2QasZ7pR5SNVA64ukuSDQj0v6gPo7O8wfUecI1KzyNBRHwtNgAmXsfb7+AyKp": "action_procurement_experience",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCg/ubQoNRfIiU+tKEgtykzNS06tJc5QHJqJtiQWAG/SSk0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnpFYEg8ULstMTi2urY0FAFM8IIM=": "utter_what_services",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnpFYEg8ULstMTi2uJWBeaUlJahGaFmJMjQUA1rRB8w==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnpEfX5lfGp9YlFpbGwsAEyIfrQ==": "utter_who_you_are",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnpEfX5lfGp9YlFpLwLTSkpLUIhQNhE2MBQBLMT9x": "action_listen"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-experience",
+      "2": "I-experience",
+      "3": "L-experience",
+      "4": "U-experience",
+      "5": "B-industry",
+      "6": "I-industry",
+      "7": "L-industry",
+      "8": "U-industry",
+      "9": "B-sector",
+      "10": "I-sector",
+      "11": "L-sector",
+      "12": "U-sector",
+      "13": "B-skills",
+      "14": "I-skills",
+      "15": "L-skills",
+      "16": "U-skills",
+      "17": "B-title",
+      "18": "I-title",
+      "19": "L-title",
+      "20": "U-title",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-experience": 1,
+      "I-experience": 2,
+      "L-experience": 3,
+      "U-experience": 4,
+      "B-industry": 5,
+      "I-industry": 6,
+      "L-industry": 7,
+      "U-industry": 8,
+      "B-sector": 9,
+      "I-sector": 10,
+      "L-sector": 11,
+      "U-sector": 12,
+      "B-skills": 13,
+      "I-skills": 14,
+      "L-skills": 15,
+      "U-skills": 16,
+      "B-title": 17,
+      "I-title": 18,
+      "L-title": 19,
+      "U-title": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

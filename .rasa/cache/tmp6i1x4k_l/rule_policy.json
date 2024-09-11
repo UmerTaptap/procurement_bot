@@ -1,0 +1,28 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_what_services\"}}]": "utter_what_services",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_what_services\"}}, {\"prev_action\": {\"action_name\": \"utter_what_services\"}, \"user\": {\"intent\": \"ask_what_services\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_general_info\"}}]": "utter_general_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_general_info\"}}, {\"prev_action\": {\"action_name\": \"utter_general_info\"}, \"user\": {\"intent\": \"ask_general_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_who_you_are\"}}]": "utter_who_you_are",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_who_you_are\"}}, {\"prev_action\": {\"action_name\": \"utter_who_you_are\"}, \"user\": {\"intent\": \"ask_who_you_are\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_procurement\"}}]": "action_inquire_procurement",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_procurement\"}}, {\"prev_action\": {\"action_name\": \"action_inquire_procurement\"}, \"user\": {\"intent\": \"inquire_procurement\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"procurement_experience\"}}]": "action_procurement_experience",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"procurement_experience\"}}, {\"prev_action\": {\"action_name\": \"action_procurement_experience\"}, \"user\": {\"intent\": \"procurement_experience\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_how_you_work\"}}]": "utter_how_you_work",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_how_you_work\"}}, {\"prev_action\": {\"action_name\": \"utter_how_you_work\"}, \"user\": {\"intent\": \"ask_how_you_work\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"filter_procurements\"}}]": "action_filter_procurements",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"filter_procurements\"}}, {\"prev_action\": {\"action_name\": \"action_filter_procurements\"}, \"user\": {\"intent\": \"filter_procurements\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

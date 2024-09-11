@@ -1,0 +1,229 @@
+version: "3.1"
+
+
+nlu:
+- intent: ask_services
+  examples: |
+    - What services are you providing?
+    - Can you list the available services?
+    - What services do you offer?
+    - Tell me about your services
+    - What are your services?
+    - Show me your services.
+    - What is this?
+    - What you provide?
+    - What about you?
+    - Show some services.
+
+- intent: ask_procurements
+  examples: |
+    - What procurements are available?
+    - Can you show me the procurements?
+    - List all procurements
+    - What procurements do you have?
+    - Show me the available procurements
+    - What procurements available?
+    - What procurement you have?
+
+- intent: ask_expertises
+  examples: |
+    - What is your expertise?
+    - Can you tell me about your expertise?
+    - What areas do you specialize in?
+    - What are your areas of expertise?
+    - Describe your expertise
+
+- intent: ask_keywords
+  examples: |
+    - What keywords are related to your services?
+    - Can you list the keywords for your procurements?
+    - What are the key terms used in your services?
+    - Tell me the keywords associated with your procurements
+    - List the keywords related to your expertise
+
+- intent: ask_industries
+  examples: |
+    - In which industries do you operate?
+    - What industries do you cover?
+    - Can you tell me the industries you work in?
+    - What are the industries relevant to your services?
+    - List the industries you are involved in
+
+- intent: ask_sectors
+  examples: |
+    - What sectors do you operate in?
+    - Can you list the sectors you cover?
+    - In which sectors are you active?
+    - Tell me about the sectors you work in
+    - What sectors are relevant to your services?
+    - How many sectors you are working in?
+
+- intent: ask_challenges
+  examples: |
+    - What challenges do you address?
+    - Can you tell me about the challenges you solve?
+    - What problems do your services tackle?
+    - Describe the challenges your procurements address
+    - What issues are resolved by your services?
+
+- intent: ask_descriptions
+  examples: |
+    - Can you describe your services?
+    - Tell me more about your procurements
+    - What is the description of your expertise?
+    - Give me a description of your services
+    - Describe the procurements you offer
+
+- intent: ask_experiences
+  examples: |
+    - What experience do you have?
+    - Can you list your previous experience?
+    - Tell me about the companies you've worked with
+    - What organizations have you worked with?
+    - Describe your experience in this field
+
+- intent: ask_all
+  examples: |
+    - Show me everything about your services
+    - Can you provide a summary of all procurements?
+    - Tell me all the details about your expertise
+    - Give me a comprehensive overview of your offerings
+    - What are all the details of your procurements?
+    
+
+- intent: ask_information
+  examples: |
+    - Tell me about [Navigating Human Rights across the Supply Chain](title).
+    - What experience is delivered for [Navigating Human Rights across the Supply Chain](title)?
+    - Show me details for [Navigating Human Rights across the Supply Chain](title).
+    - Can you tell me more about [Navigating Human Rights across the Supply Chain](title)?
+    - Give me the procurement information for [Navigating Human Rights across the Supply Chain](title).
+    - What is the experience and benefits for [Navigating Human Rights across the Supply Chain](title)?
+    - Provide me the details of [Navigating Human Rights across the Supply Chain](title).
+    - What's the procurement experience for [Navigating Human Rights across the Supply Chain](title)?
+    - What is [Expert Procurement in Cybersecurity Transformation](title)?
+    - Tell me about [Software Licensing Audit](title).
+    - I need information on [Alignment of IT Agreements with a Transfer Services Agreement (TSA)](title).
+    - Can you share details on [Expert Creation of Excel-based Supply Chain KPI's/Dashboards](title)?
+    - What are the benefits of [Fleet Procurement and Green Fleet/Decarbonisation Delivery](title)?
+    - Share insights about [Software Licencing impact during Mergers, Acquisition or Divestments](title).
+    - Tell me more about [Expert Procurement of ERP Systems](title).
+    - What is [Advisory for M&A, Separation, Divestment and Transformation](title)?
+    - What experience is delivered for [Strategic Contingent Workforce Procurement](title)?
+    - Show me the procurement details for [IT Procurement Process Improvement](title).
+    - Tell me more about [Microsoft Enterprise Agreement Renewal](title).
+    - What experience is delivered for [IT Software Licensing and Asset Management](title)?
+    - Can you tell me about [Legal Services Procurement](title)?
+    - Give me information on [Procurement of Employee Rewards Programs](title).
+    - What's the experience delivered for [Public Sector IT Reseller Model](title)?
+    - Tell me more about [Procurement Support for Strategic Software Licenses](title).
+    - I want to know about [How to manage a Software Licensing Audit](title).
+    - Share more about [Procurement Strategy for Data Migration and Management (SharePoint)](title).
+    - What’s the procurement experience for [ERP Systems Integrator Selection](title)?
+    - Can you provide information on [IT Procurement Programme Delivery](title)?
+    - Tell me more about [Procuring Cyber Security Solutions](title).
+    - What's the procurement for [R&D Services Procurement for Innovation](title)?
+    - Give me the details of [Advice on IT Outsourcing and Business Transformation](title).
+    - What procurement benefits are delivered for [Business Process Outsourcing Strategy](title)?
+    - Can you tell me about [Advice on Complex Contract and Supplier Management Issues](title)?
+    - Share details about [Marine and Cargo Handling Solutions Cost Optimisation](title).
+    - What’s the experience for [Reverse Logistics and Returns Management Strategies](title)?
+    - Tell me about [Real Estate and Lease Management Services Procurement](title).
+    - What are the benefits of [IT Outsourcing for Application Development and Support](title)?
+    - What's the procurement information for [Managing IR35 & Global Compliance within Contingent Labour](title)?
+    - Can you provide details for [Negotiating with Top Tier Consulting and Professional Services Suppliers](title)?
+    - What is the procurement experience for [Outsourced Managed Services - Post Contract Management](title)?
+    - I want details about [Procurement Strategy for Management Consultancies](title).
+    - What experience is delivered for [Procurement of Clinical Research Services](title)?
+    - Share insights about [Health and Safety Equipment and Services Procurement](title).
+    - What’s the procurement for [IT Procurement Advisory - SaaS, Hardware, Services, Outsourcing, Networks](title)?
+    - Tell me more about [IT Procurement Sourcing Strategies for Public sector](title).
+    - Can you share details on [Defence Sector Cost Reduction and Sourcing Strategy](title)?
+    - What are the benefits of [Strategic Sourcing for Food, Pharma, Leisure, Retail & Telecoms Industries](title)?
+    - Give me the procurement experience for [Legal Services Procurement](title).
+    - What’s the experience for [Supply Chain Risk Management Advisory](title)?
+    - Can you tell me more about [Procurement of Scientific and Laboratory Equipment](title)?
+    - What’s the procurement strategy for [Global Hotel Rate Negotiations via e-Auction](title)?
+    - Share details about [Software License Asset Compliance Management](title).
+
+
+
+
+entities:
+  - title
+  - skill
+  - experience
+  - keyword
+  - industry
+  - sector
+  - challenge
+
+lookup: 
+  title:
+    - Advisory for M&A, Separation, Divestment and Transformation
+    - Navigating Human Rights across the Supply Chain
+    - IT Procurement Process Improvement
+    - IT Procurement Programme Delivery
+    - Software Licensing Impact During Mergers, Acquisition or Divestments
+    - Advice on IT Outsourcing and Business Transformation
+    - IT Software Licensing and Asset Management
+    - How to Manage a Software Licensing Audit
+
+  skill:
+    - Transformation
+    - Divestment
+    - Mergers & Acquisitions
+    - Consulting
+    - Human Rights
+    - Supply Chain
+    - Legal Compliance
+    - IT Procurement
+    - Process Improvement
+    - Risk Reduction
+    - Supplier Management
+    - Excel
+    - KPI Development
+
+  experience:
+    - Accenture
+    - Aster Group
+    - Aviva
+    - NHS Trust
+    - Civil Aviation Authority
+    - High Court ruling EWHC1841
+    - CIPS Distinction
+    - 10 years in IT Procurement
+
+  industry:
+    - Healthcare
+    - IT
+    - Public Sector
+    - Supply Chain
+    - Logistics
+    - Aviation
+    - Transport
+
+  sector:
+    - Private
+    - Public
+
+  keyword:
+    - Software Licensing
+    - Audit
+    - Negotiation
+    - Asset Management
+    - IT Procurement
+    - Cybersecurity
+    - Transport
+    - Supply Chain
+    - Inventory Management
+
+  challenge:
+    - Procurement inefficiencies
+    - Risk in buying processes
+    - Cost savings
+    - Statutory duty discharge
+    - Supply chain human rights compliance
+    - M&A challenges
+    - Separation complexities
+    - Transformation of businesses

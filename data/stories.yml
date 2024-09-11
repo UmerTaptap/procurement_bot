@@ -1,0 +1,67 @@
+version: "3.1"
+stories:
+- story: User asks about services
+  steps:
+  - intent: ask_services
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about procurements
+  steps:
+  - intent: ask_procurements
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about expertise
+  steps:
+  - intent: ask_expertises
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about keywords
+  steps:
+  - intent: ask_keywords
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about industry
+  steps:
+  - intent: ask_industries
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about sector
+  steps:
+  - intent: ask_sectors
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about challenges
+  steps:
+  - intent: ask_challenges
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks for a description
+  steps:
+  - intent: ask_descriptions
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks about experience
+  steps:
+  - intent: ask_experiences
+  - action: action_provide_information
+  - action: utter_fallback
+
+- story: User asks for everything
+  steps:
+  - intent: ask_all
+  - action: action_provide_information
+  - action: utter_fallback
+
+
+- story: User ask information
+  steps:
+  - intent: ask_information
+  - action: action_provide_information
