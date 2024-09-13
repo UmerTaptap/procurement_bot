@@ -1,67 +1,64 @@
 version: "3.1"
 stories:
-- story: User asks about services
-  steps:
-  - intent: ask_services
-  - action: action_provide_information
-  - action: utter_fallback
 
-- story: User asks about procurements
+- story: user greets
   steps:
-  - intent: ask_procurements
-  - action: action_provide_information
-  - action: utter_fallback
+  - intent: greet
+  - action: utter_greet
 
-- story: User asks about expertise
+- story: user says goodbye
   steps:
-  - intent: ask_expertises
-  - action: action_provide_information
-  - action: utter_fallback
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: User asks about keywords
+- story: user expresses thanks
   steps:
-  - intent: ask_keywords
-  - action: action_provide_information
-  - action: utter_fallback
+  - intent: thank_you
+  - action: utter_thank_you
 
-- story: User asks about industry
+- story: user provides natural query
   steps:
-  - intent: ask_industries
-  - action: action_provide_information
-  - action: utter_fallback
+  - intent: natural_query
+  - action: utter_natural_query
 
-- story: User asks about sector
+- story: user provides irrelevant input
   steps:
-  - intent: ask_sectors
-  - action: action_provide_information
-  - action: utter_fallback
+  - intent: irrelevant
+  - action: action_handle_irrelevant
 
-- story: User asks about challenges
+- story: Introduction query handling
   steps:
-  - intent: ask_challenges
-  - action: action_provide_information
-  - action: utter_fallback
-
-- story: User asks for a description
-  steps:
-  - intent: ask_descriptions
-  - action: action_provide_information
-  - action: utter_fallback
-
-- story: User asks about experience
-  steps:
-  - intent: ask_experiences
-  - action: action_provide_information
-  - action: utter_fallback
-
-- story: User asks for everything
-  steps:
-  - intent: ask_all
-  - action: action_provide_information
-  - action: utter_fallback
+  - intent: introduction_query
+  - action: action_handle_introduction_queries
 
 
-- story: User ask information
+
+- story: User ask industries covered
   steps:
-  - intent: ask_information
-  - action: action_provide_information
+  - intent: ask_industries_covered
+  - action: action_ask_industries_covered
+
+- story: User ask specific industrie
+  steps:
+  - intent: ask_industry_specific
+  - action: actions_ask_industry_specific  
+
+- story: User ask sectors covered
+  steps:
+  - intent: ask_sectors_covered
+  - action: action_ask_sectors_covered
+
+- story: User ask specific sector
+  steps:
+  - intent: ask_procurements_by_sector
+  - action: action_ask_procurements_by_sector  
+
+- story: User ask procurement by providing sector and industry
+  steps:
+  - intent: ask_procurements_by_industry_and_sector
+  - action: action_ask_procurements_by_industry_and_sector    
+
+- story: User ask procurement by title
+  steps:
+  - intent: ask_procurement_search_by_title
+  - action: action_ask_procurement_search_by_title    

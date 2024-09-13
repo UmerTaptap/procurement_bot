@@ -2,150 +2,535 @@ version: "3.1"
 
 
 nlu:
-- intent: ask_services
+
+- intent: greet
   examples: |
-    - What services are you providing?
-    - Can you list the available services?
-    - What services do you offer?
-    - Tell me about your services
-    - What are your services?
-    - Show me your services.
+    - Hi
+    - Hello
+    - Hey there
+    - Good morning
+    - Good afternoon
+    - Good evening
+    - Howdy
+    - What’s up?
+    - Hiya
+    - Hello there
+    - Hello!
+    - Hi there!
+    - Hey!
+    - Good morning!
+    - Good afternoon!
+    - Good evening!
+    - Hi!
+    - Howdy!
+    - What's up?
+    - How are you?
+    - Howdy, partner!
+    - Hey there!
+    - Greetings!
+    - Hello there!
+    - Hi, how can I assist you today?
+    - Welcome!
+    - Hi, how’s it going?
+    - Hey, how can I help?
+    - Hello, what can I do for you?
+    - Good to see you!
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Catch you later
+    - Take care
+    - Have a great day
+    - Farewell
+    - Until next time
+    - See you soon
+    - Goodbye!
+    - See you later!
+    - Bye for now!
+    - Take care!
+    - Have a great day!
+    - Farewell!
+    - Until next time!
+    - See you soon!
+    - Catch you later!
+    - Bye!
+    - Have a good one!
+    - Thanks, bye!
+    - Bye, have a nice day!
+    - See you next time!
+    - Take care, goodbye!
+    - It was nice talking to you!
+    - Have a wonderful day!
+    - Bye for now, talk soon!
+    - Until we meet again!
+    - Goodbye, have a great day!
+
+- intent: thank_you
+  examples: |
+    - Thank you
+    - Thanks a lot
+    - I appreciate it
+    - Much appreciated
+    - Thanks so much
+    - Thanks a million
+    - I’m grateful
+    - Thank you very much
+    - Really appreciate it
+    - Thank you so much!
+    - Thanks for your help!
+    - I’m grateful for your assistance!
+    - Many thanks!
+    - Thanks a million!
+    - I appreciate your help!
+    - Thanks for the information!
+    - Thank you very much!
+    - I’m thankful for your support!
+    - Thanks for your time!
+    - I’m grateful for your assistance!
+    - Thank you for your help!
+    - Thanks for everything!
+    - I appreciate it a lot!
+    - Thank you for the support!
+    - Much appreciated!
+    - Thanks for your guidance!
+
+- intent: natural_query
+  examples: |
+    - Hmm
+    - Okay
+    - Right
+    - Got it
+    - Alright
+    - Sure
+    - I see
+    - Understood
+    - Yup
+    - That makes sense
+    - Hmm, okay.
+    - Okay, thanks.
+    - Yeah.
+    - Alright.
+    - I see.
+    - Interesting.
+    - Alright, I understand.
+    - Okay, let’s do that.
+    - That makes sense.
+    - Sure thing.
+    - Fine.
+    - Okay, I’m ready.
+    - Gotcha.
+    - Great.
+    - Alright then.
+    - Okay, let me think.
+    - Sure, I’ll do that.
+    - Hmm, I’ll check on that.
+
+- intent: irrelevant
+  examples: |
+    - I’m hungry
+    - I love you
+    - Sing a song
+    - Tell me a joke
+    - What’s the weather today?
+    - I don’t know what to do
+    - I need a recipe
+    - Play some music
+    - How’s it going?
+    - I’m bored
+    - Fuck You
+    - I’m hungry.
+    - I love you.
+    - I fuck you.
+    - Tell me a joke.
+    - Can you dance?
+    - What’s the weather like?
+    - Do you like pizza?
+    - What’s your favorite color?
+    - Are you free tonight?
+    - What’s your favorite movie?
+    - Can you play games?
+    - Do you have a pet?
+    - What’s your favorite book?
+    - How’s the weather?
+    - Can you sing?
+    - Tell me a joke.
+    - What’s your favorite food?
+    - Can you tell me a story?
+    - What’s your favorite hobby?
+
+- intent: introduction_query
+  examples: |
     - What is this?
-    - What you provide?
-    - What about you?
-    - Show some services.
+    - Who are you?
+    - Tell me about yourself
+    - What are you?
+    - Are you a bot?
+    - Are you human?
+    - What can you do?
+    - What is your purpose?
+    - Can you introduce yourself?
+    - What’s your function?
+    - Who created you?
+    - What’s your role?
+    - How do you work?
+    - What’s your job?
+    - Why are you here?
+    - What do you do?
+    - What’s your name?
+    - Are you a real person?
+    - What’s your story?
+    - What’s your background?
+    - What’s your capability?
+    - What kind of bot are you?
+    - How can you assist me?
+    - What’s your role?
+    - How can you help me?
+    - Why should I use you?
+    - What’s your expertise?
+    - What are you designed for?
+    - Can you explain yourself?
+    - What’s your purpose here?
+    - Are you intelligent?
+    - How smart are you?
+    - Can you help with everything?
+    - What are your limitations?
+    - What do you specialize in?
+    - How can you make my life easier?
+    - What’s the use of this service?
+    - Why should I use you?
+    - What is your job?
+    - What are you designed for?
+    - Can you tell me more about yourself?
+    - Describe your capabilities.
+    - What can you help with?
+    - What are you here for?
+    - Are you a virtual assistant?
+    - What is your purpose here?
+    - Can you tell me what you do?
+    - What’s your main function?
+    - Give me more information about you.
+    - What services do you offer?
+    - How can you assist?
 
-- intent: ask_procurements
+
+# - intent: ask_information
+#   examples: |
+#     - Tell me about [Navigating Human Rights across the Supply Chain](title).
+#     - What experience is delivered for [Navigating Human Rights across the Supply Chain](title)?
+#     - Show me details for [Navigating Human Rights across the Supply Chain](title).
+#     - Can you tell me more about [Navigating Human Rights across the Supply Chain](title)?
+#     - Give me the procurement information for [Navigating Human Rights across the Supply Chain](title).
+#     - What is the experience and benefits for [Navigating Human Rights across the Supply Chain](title)?
+#     - Provide me the details of [Navigating Human Rights across the Supply Chain](title).
+#     - What's the procurement experience for [Navigating Human Rights across the Supply Chain](title)?
+#     - What is [Expert Procurement in Cybersecurity Transformation](title)?
+#     - Tell me about [Software Licensing Audit](title).
+#     - I need information on [Alignment of IT Agreements with a Transfer Services Agreement (TSA)](title).
+#     - Can you share details on [Expert Creation of Excel-based Supply Chain KPI's/Dashboards](title)?
+#     - What are the benefits of [Fleet Procurement and Green Fleet/Decarbonisation Delivery](title)?
+#     - Share insights about [Software Licencing impact during Mergers, Acquisition or Divestments](title).
+#     - Tell me more about [Expert Procurement of ERP Systems](title).
+#     - What is [Advisory for M&A, Separation, Divestment and Transformation](title)?
+#     - What experience is delivered for [Strategic Contingent Workforce Procurement](title)?
+#     - Show me the procurement details for [IT Procurement Process Improvement](title).
+#     - Tell me more about [Microsoft Enterprise Agreement Renewal](title).
+#     - What experience is delivered for [IT Software Licensing and Asset Management](title)?
+#     - Can you tell me about [Legal Services Procurement](title)?
+#     - Give me information on [Procurement of Employee Rewards Programs](title).
+#     - What's the experience delivered for [Public Sector IT Reseller Model](title)?
+#     - Tell me more about [Procurement Support for Strategic Software Licenses](title).
+#     - I want to know about [How to manage a Software Licensing Audit](title).
+#     - Share more about [Procurement Strategy for Data Migration and Management (SharePoint)](title).
+#     - What’s the procurement experience for [ERP Systems Integrator Selection](title)?
+#     - Can you provide information on [IT Procurement Programme Delivery](title)?
+#     - Tell me more about [Procuring Cyber Security Solutions](title).
+#     - What's the procurement for [R&D Services Procurement for Innovation](title)?
+#     - Give me the details of [Advice on IT Outsourcing and Business Transformation](title).
+#     - What procurement benefits are delivered for [Business Process Outsourcing Strategy](title)?
+#     - Can you tell me about [Advice on Complex Contract and Supplier Management Issues](title)?
+#     - Share details about [Marine and Cargo Handling Solutions Cost Optimisation](title).
+#     - What’s the experience for [Reverse Logistics and Returns Management Strategies](title)?
+#     - Tell me about [Real Estate and Lease Management Services Procurement](title).
+#     - What are the benefits of [IT Outsourcing for Application Development and Support](title)?
+#     - What's the procurement information for [Managing IR35 & Global Compliance within Contingent Labour](title)?
+#     - Can you provide details for [Negotiating with Top Tier Consulting and Professional Services Suppliers](title)?
+#     - What is the procurement experience for [Outsourced Managed Services - Post Contract Management](title)?
+#     - I want details about [Procurement Strategy for Management Consultancies](title).
+#     - What experience is delivered for [Procurement of Clinical Research Services](title)?
+#     - Share insights about [Health and Safety Equipment and Services Procurement](title).
+#     - What’s the procurement for [IT Procurement Advisory - SaaS, Hardware, Services, Outsourcing, Networks](title)?
+#     - Tell me more about [IT Procurement Sourcing Strategies for Public sector](title).
+#     - Can you share details on [Defence Sector Cost Reduction and Sourcing Strategy](title)?
+#     - What are the benefits of [Strategic Sourcing for Food, Pharma, Leisure, Retail & Telecoms Industries](title)?
+#     - Give me the procurement experience for [Legal Services Procurement](title).
+#     - What’s the experience for [Supply Chain Risk Management Advisory](title)?
+#     - Can you tell me more about [Procurement of Scientific and Laboratory Equipment](title)?
+#     - What’s the procurement strategy for [Global Hotel Rate Negotiations via e-Auction](title)?
+#     - Share details about [Software License Asset Compliance Management](title).
+#     - I need procurement of ["Employee Wellness & Leisure Services Procurement](title).
+#     - Do you have someone in [Corporate Fleet Management Strategies](title) procurement?
+#     - Tell me an expert in [Travel Management](title).
+
+
+- intent: ask_industries_covered
   examples: |
-    - What procurements are available?
-    - Can you show me the procurements?
-    - List all procurements
-    - What procurements do you have?
-    - Show me the available procurements
-    - What procurements available?
-    - What procurement you have?
+    - How many industries do you cover?
+    - What industries are you involved in?
+    - Tell me about all the industries you work with.
+    - Which industries are covered by your services?
+    - What are the industries you work in?
+    - How many different industries do you cater to?
+    - What industries are included in your services?
+    - Specify industries you cover.
+    - How many industries do you cover?
+    - Show available industries.
+    - Show me all industries you have.
+    - What are the sectors you work in?
+    - Can you list the industries you specialize in?
+    - What are the industries you support?
+    - Give me a list of industries your services span.
+    - How many different industries do you serve?
+    - What industries do you focus on?
+    - What industries are in your portfolio?
+    - Can you provide a list of industries you work with?
+    - Show me the industries you cover.
+    - How many sectors are included in your services?
+    - Industries?
+    - Covered industries.
+    - Show industry,
+    - Show me all covered industries.
+    - All available industries.
+    - List all covered industries.
+    - Which industries you covers?
+    - Could you please tell me what industries you covered?
+    - Please tell me about industries you covered?
+    - Can you give me all industries you have?
+    - Give all industries.
+    - Tell me about industries.
 
-- intent: ask_expertises
+- intent: ask_industry_specific
   examples: |
-    - What is your expertise?
-    - Can you tell me about your expertise?
-    - What areas do you specialize in?
-    - What are your areas of expertise?
-    - Describe your expertise
+    - Can you show me procurements related to [IT](industry) industry?
+    - I want to see procurements in the [Healthcare](industry) industry.
+    - Show me all the procurements in the [Pharmaceutical](industry) industry.
+    - Can you provide procurements in the [Finance](industry) industry?
+    - I need to know about your procurement services in the [Consulting](industry) industry.
+    - Show me procurement examples from the [Public](industry).
+    - Tell me about procurements in the [Manufacturing](industry) industry.
+    - Give me available procurements in the [Supply Chain](industry) industry.
+    - What industry do you have expertise in [IT](industry) industry?
+    - Show me procurements related to [Legal](industry) industry.
+    - List all expertise in [Logistics](industry) industry.
+    - What are the procurements in the [Education](industry) industry?
+    - Can you show me procurements in the [Retail](industry) industry?
+    - Provide procurements for the [Telecommunications](industry) industry.
+    - What are the procurements available in the [Construction](industry) industry?
+    - Give me details on procurements in the [Transportation](industry) industry.
+    - Show me procurements in the [Energy](industry) industry.
+    - What are the procurements for the [Agriculture](industry) industry?
+    - Tell me about the procurements in the [Aerospace](industry) industry.
+    - List the procurements in the [Hospitality](industry) industry.
+    - [Legal](industry) industry.
+    - What is [Transport](industry) industry?
+    - Show all experts in [Logistics](industry) industry.
+    - All experts available in [Aerospace](industry) industry.
+    - Could you please tell me about procurements in the [Entertainment](industry) industry?
+    - Please give me information on procurements in the [Automotive](industry) industry.
+    - I’d like to know about procurements in the [Real Estate](industry) industry.
+    - Can you provide me with procurements related to the [Marine](industry) industry?
+    - Show me procurements available in the [Fashion](industry) industry.
+    - What are the procurement opportunities in the [Non-Profit](industry) industry?
+    - Could you list the procurements in the [Utilities](industry) industry?
+    - Please show me procurement examples from the [Gaming](industry) industry.
+    - Tell me about the procurements in the [Art & Culture](industry) industry.
+    - Give me information on procurements related to the [Education Technology](industry) industry.
+    - Can you show me procurement details for the [Home Improvement](industry) industry?
+    - Show all services you provide in [BioScience](industry) industry.
+    - Available procurements in [Various](industry) industry.
+    - I would like to see procurement projects in the [Manufacturing](industry) industries.
+    - I would like to see procurement projects in both the [Construction](industry) and [Manufacturing](industry) industries.
+    - List the procurements in the [Hospitality](industry) industry.
+    - Can I see procurements in the [Finance](industry) sector?
+    - [Healthcare](industry) procurements, please.
+    - What procurements do you offer in the [Energy](industry) industry?
+    - Show me available procurements in the [Retail](industry) industry.
+    - Tell me about procurement options in the [Construction](industry) industry.
+    - Could you provide me with procurements related to the [Marine](industry) industry?
+    - Are there any procurements available for the [Non-Profit](industry) sector?
+    - I’m looking for procurements in industries like [Aerospace](industry) and [Transport](industry).
+    - Could you please tell me about procurement opportunities in the [Gaming](industry)?
+    - Could you provide me with examples of procurements in the [BioScience](industry) and [Healthcare](industry)?
+    - Please share examples of procurements you have worked on in the [Catering](industry) or [Hospitality](industry).
+    - Show me the procurements available in the [Art & Culture](industry) and [Entertainment](industry).
+    - I’m looking for procurements in the industry of [Art & Culture](industry).
 
-- intent: ask_keywords
+- intent: ask_sectors_covered
   examples: |
-    - What keywords are related to your services?
-    - Can you list the keywords for your procurements?
-    - What are the key terms used in your services?
-    - Tell me the keywords associated with your procurements
-    - List the keywords related to your expertise
+    - How many sectors do you cover?
+    - Can you tell me about the sectors you handle?
+    - What sectors are included in your services?
+    - List all sectors covered.
+    - I want to know the number of sectors you cover.
+    - Tell me the sectors you work in.
+    - What are the sectors you cover?
+    - How many sectors do you offer services in?
+    - Show me the sectors you cover.
+    - What sectors are available?
+    - I’d like to see the sectors you handle.
+    - How many different sectors are you involved in?
+    - List all the sectors you are working with.
+    - What sectors do you specialize in?
+    - Can you provide me with the sectors you cover?
+    - Tell me the range of sectors you serve.
+    - What are the sectors covered by your service?
+    - Show me the sectors covered.
+    - Can you list the sectors you provide services for?
+    - How many sectors are part of your offering?
+    - What are sectors?
+    - Sectors?
+    - What about sectors?
+    - Show me sectors?
+    - Could you please tell me sectors you covers?
+    - How many sectors do you have?
+    - I would like to know about sectors you handled.
+    - Sector
+    - Sectors
+    - Covered sectors
+    - Working sectors
+    - Tell me working sectors
+    - What sectors are you working with?
 
-- intent: ask_industries
+- intent: ask_procurements_by_sector
   examples: |
-    - In which industries do you operate?
-    - What industries do you cover?
-    - Can you tell me the industries you work in?
-    - What are the industries relevant to your services?
-    - List the industries you are involved in
+    - Show me available procurements in the [Public](sector).
+    - I would like to see procurements in the [Private](sector) sector.
+    - Can you provide procurements for the [Private](sector) sector?
+    - Tell me about procurements in the [Private](sector) sector.
+    - Show me procurements in the [Public](sector) sector.
+    - What procurements do you have in the [Private](sector) sector?
+    - List procurements available in the [Private](sector) sector.
+    - I’m interested in procurements in the [Retail](sector) sector.
+    - Provide me with procurements from the [Transport](sector) sector.
+    - Show procurements related to the [Private](sector) sector.
+    - What procurements are available in the [Public](sector) sector?
+    - Can you give me procurements for the [Public](sector) sector?
+    - I want to know about procurements in the [Private](sector) sector.
+    - List all procurements available in the [Private](sector) sector.
+    - Show procurements for the [Public](sector) sector.
+    - What are the procurements in the [Private](sector) sector?
+    - Give me procurements for the [Legal](sector) sector.
+    - Show me procurements available in the [Private](sector) sector.
+    - Can you provide procurements in the [Public](sector) sector?
+    - Tell me about procurements in the [Private](sector) sector.
+    - What experties you have in [Private](sector) sectors?
+    - What is [Private](sector) sector?
+    - [Public](sector) sector.
+    - Show [Private](sector) sector.
+    - [Public](sector)?
 
-- intent: ask_sectors
+- intent: ask_procurements_by_industry_and_sector
   examples: |
-    - What sectors do you operate in?
-    - Can you list the sectors you cover?
-    - In which sectors are you active?
-    - Tell me about the sectors you work in
-    - What sectors are relevant to your services?
-    - How many sectors you are working in?
+    - Show me [Healthcare](industry) procurements in [Private](sector) sector.
+    - List procurements for [Finance](industry) in [Public](sector).
+    - I want to see procurements related to [IT](industry) in the [Private](sector) sector.
+    - What procurements are available in [Education](industry) within the [Public](sector) sector?
+    - Give me procurements for [Manufacturing](industry) in [Private](sector).
+    - Show procurements in [Legal](industry) sector, [Public](sector).
+    - Can you provide me with procurements for [Retail](industry) in [Private](sector)?
+    - I need procurements in [Healthcare](industry) in the [Public](sector) sector.
+    - List all procurements in the [Consulting](industry) sector, [Private](sector).
+    - Show me all procurements for [Construction](industry) in the [Public](sector) sector.
+    - Tell me about procurements for [Energy](industry) in [Private](sector).
+    - What procurements are available in the [Transport](industry) sector, [Public](sector)?
+    - Show all procurements related to [Telecommunications](industry) in [Private](sector).
+    - List procurements for [Pharmaceutical](industry) in [Public](sector).
+    - I want to see procurements for [Hospitality](industry) within the [Private](sector) sector.
+    - Can you give me procurements for [Logistics](industry) in the [Public](sector) sector?
+    - Show procurements in the [Aerospace](industry) industry and [Private](sector).
+    - Provide procurements related to [Finance](industry) in [Public](sector).
+    - What are the procurements in the [BioScience](industry) industry in the [Private](sector) sector?
+    - Give me all procurements in [Retail](industry) within the [Public](sector) sector.
+    - List procurements in the [Automotive](industry) sector, [Private](sector).
+    - I would like to know about procurements in [Utilities](industry) in the [Public](sector) sector.
+    - Show me procurements for [Marine](industry) in [Private](sector).
+    - I need to see procurements related to [Entertainment](industry) in the [Public](sector) sector.
+    - Tell me about procurements for [Fashion](industry) in the [Private](sector) sector.
+    - What procurements are there in the [Home Improvement](industry) industry in [Public](sector)?
+    - List procurements in the [Education Technology](industry) industry and [Private](sector).
+    - Show me procurements for [Non-Profit](industry) in the [Public](sector) sector.
+    - Provide procurements related to [Gaming](industry) in the [Private](sector).
+    - Can you tell me about procurements in the [Art & Culture](industry) industry within the [Public](sector) sector?
+    - What are the procurements available in the [Real Estate](industry) sector, [Private](sector)?
 
-- intent: ask_challenges
+- intent: ask_procurement_search_by_title
   examples: |
-    - What challenges do you address?
-    - Can you tell me about the challenges you solve?
-    - What problems do your services tackle?
-    - Describe the challenges your procurements address
-    - What issues are resolved by your services?
-
-- intent: ask_descriptions
-  examples: |
-    - Can you describe your services?
-    - Tell me more about your procurements
-    - What is the description of your expertise?
-    - Give me a description of your services
-    - Describe the procurements you offer
-
-- intent: ask_experiences
-  examples: |
-    - What experience do you have?
-    - Can you list your previous experience?
-    - Tell me about the companies you've worked with
-    - What organizations have you worked with?
-    - Describe your experience in this field
-
-- intent: ask_all
-  examples: |
-    - Show me everything about your services
-    - Can you provide a summary of all procurements?
-    - Tell me all the details about your expertise
-    - Give me a comprehensive overview of your offerings
-    - What are all the details of your procurements?
-    
-
-- intent: ask_information
-  examples: |
-    - Tell me about [Navigating Human Rights across the Supply Chain](title).
-    - What experience is delivered for [Navigating Human Rights across the Supply Chain](title)?
-    - Show me details for [Navigating Human Rights across the Supply Chain](title).
-    - Can you tell me more about [Navigating Human Rights across the Supply Chain](title)?
-    - Give me the procurement information for [Navigating Human Rights across the Supply Chain](title).
-    - What is the experience and benefits for [Navigating Human Rights across the Supply Chain](title)?
-    - Provide me the details of [Navigating Human Rights across the Supply Chain](title).
-    - What's the procurement experience for [Navigating Human Rights across the Supply Chain](title)?
-    - What is [Expert Procurement in Cybersecurity Transformation](title)?
-    - Tell me about [Software Licensing Audit](title).
-    - I need information on [Alignment of IT Agreements with a Transfer Services Agreement (TSA)](title).
-    - Can you share details on [Expert Creation of Excel-based Supply Chain KPI's/Dashboards](title)?
-    - What are the benefits of [Fleet Procurement and Green Fleet/Decarbonisation Delivery](title)?
-    - Share insights about [Software Licencing impact during Mergers, Acquisition or Divestments](title).
-    - Tell me more about [Expert Procurement of ERP Systems](title).
-    - What is [Advisory for M&A, Separation, Divestment and Transformation](title)?
-    - What experience is delivered for [Strategic Contingent Workforce Procurement](title)?
-    - Show me the procurement details for [IT Procurement Process Improvement](title).
-    - Tell me more about [Microsoft Enterprise Agreement Renewal](title).
-    - What experience is delivered for [IT Software Licensing and Asset Management](title)?
-    - Can you tell me about [Legal Services Procurement](title)?
-    - Give me information on [Procurement of Employee Rewards Programs](title).
-    - What's the experience delivered for [Public Sector IT Reseller Model](title)?
-    - Tell me more about [Procurement Support for Strategic Software Licenses](title).
-    - I want to know about [How to manage a Software Licensing Audit](title).
-    - Share more about [Procurement Strategy for Data Migration and Management (SharePoint)](title).
-    - What’s the procurement experience for [ERP Systems Integrator Selection](title)?
-    - Can you provide information on [IT Procurement Programme Delivery](title)?
-    - Tell me more about [Procuring Cyber Security Solutions](title).
-    - What's the procurement for [R&D Services Procurement for Innovation](title)?
-    - Give me the details of [Advice on IT Outsourcing and Business Transformation](title).
-    - What procurement benefits are delivered for [Business Process Outsourcing Strategy](title)?
-    - Can you tell me about [Advice on Complex Contract and Supplier Management Issues](title)?
-    - Share details about [Marine and Cargo Handling Solutions Cost Optimisation](title).
-    - What’s the experience for [Reverse Logistics and Returns Management Strategies](title)?
-    - Tell me about [Real Estate and Lease Management Services Procurement](title).
-    - What are the benefits of [IT Outsourcing for Application Development and Support](title)?
-    - What's the procurement information for [Managing IR35 & Global Compliance within Contingent Labour](title)?
-    - Can you provide details for [Negotiating with Top Tier Consulting and Professional Services Suppliers](title)?
-    - What is the procurement experience for [Outsourced Managed Services - Post Contract Management](title)?
-    - I want details about [Procurement Strategy for Management Consultancies](title).
-    - What experience is delivered for [Procurement of Clinical Research Services](title)?
-    - Share insights about [Health and Safety Equipment and Services Procurement](title).
-    - What’s the procurement for [IT Procurement Advisory - SaaS, Hardware, Services, Outsourcing, Networks](title)?
-    - Tell me more about [IT Procurement Sourcing Strategies for Public sector](title).
-    - Can you share details on [Defence Sector Cost Reduction and Sourcing Strategy](title)?
-    - What are the benefits of [Strategic Sourcing for Food, Pharma, Leisure, Retail & Telecoms Industries](title)?
-    - Give me the procurement experience for [Legal Services Procurement](title).
-    - What’s the experience for [Supply Chain Risk Management Advisory](title)?
-    - Can you tell me more about [Procurement of Scientific and Laboratory Equipment](title)?
-    - What’s the procurement strategy for [Global Hotel Rate Negotiations via e-Auction](title)?
-    - Share details about [Software License Asset Compliance Management](title).
-
+    - Hi, can you give me information about [M&A](title)?
+    - I need [supply chain](title) procurement details.
+    - Could you tell me more about [human rights](title) experts?
+    - Give me details about [Transformation](title) service providers.
+    - Can you find experts related to [legal compliance](title)?
+    - Please provide information about [divestment](title) specialists.
+    - I am looking for a [Mergers & Acquisitions](title) expert.
+    - I would like to see experts in [Separation](title).
+    - Do you have service providers for [Freedom of Information](title)?
+    - Find me an expert related to [consulting](title).
+    - Show me details for [healthcare industry](title) service providers.
+    - I want an expert for [public sector](title).
+    - Can you show me service providers in [aviation](title)?
+    - I want to know about experts related to [supply chain human rights compliance](title).
+    - Please search for experts with experience in [dental directory](title).
+    - Could you find a service provider with knowledge in [Accenture](title)?
+    - Tell me about experts specializing in [Transformation](title).
+    - Do you have services related to [PwC](title)?
+    - I am searching for an expert in [UCL](title).
+    - Could you provide details about [Keyloop](title) experts?
+    - I’m looking for a specialist in [James Fisher](title).
+    - Are there any experts in [Aviation](title)?
+    - Tell me about services in [Francisco Partners](title).
+    - Can you get me details about experts with [GSK](title) experience?
+    - Show me specialists related to [Virgin Care](title).
+    - I would like to see service providers experienced in [Transformation](title).
+    - Can you give me details of [private sector](title) experts?
+    - Show me providers with expertise in [procurement](title).
+    - Who are the experts in [legal compliance](title)?
+    - Give me information on service providers experienced in [Healthcare](title).
+    - Tell me about procurements in [Transformation](title).
+    - I’m looking for service providers in the [automobile industry](title).
+    - Do you have experts related to [Mergers and Acquisitions](title)?
+    - Provide me with information about [IT](title) service providers.
+    - Are there procurement services related to [Financial Compliance](title)?
+    - Show me experts who have experience in [Healthcare Procurement](title).
+    - I need information on [Aviation](title) service providers.
+    - Could you find procurements for [Healthcare Human Rights](title)?
+    - I want information about experts in [Mergers and Acquisitions](title).
+    - Do you have experts in [IT procurement](title)?
+    - Find me a [Human Rights](title) expert.
+    - Show me all available [procurements related to legal compliance](title).
+    - Please provide the list of experts for [supply chain](title).
+    - Can you help me find a [legal compliance](title) expert?
+    - Tell me about experts who handle [consulting](title).
+    - I need to find experts for [divestment](title) services.
+    - Are there procurements available for [aviation](title)?
+    - I’m looking for [Healthcare](title) related procurements.
+    - Provide me with all [IT](title) procurements.
+    - Could you give me experts in [procurement](title)?
+    - Who are the [human rights](title) experts?
+    - Find procurements that deal with [divestment](title).
+    - Can you get me experts who deal with [public sector](title)?
+    - I am searching for service providers in [aviation](title).
+    - Could you show me all procurements for [Transformation](title)?
+    - Please provide experts for [human rights in supply chain](title).
+    - Find me the top experts in [dental compliance](title).
+    - Show me available [legal experts](title) in procurement.
+    - Do you have [financial compliance](title) experts?
+    - Provide me information about [aviation sector](title) procurements.
+    - Can you tell me about experts in [public sector healthcare](title)?
+    - Give me information about procurements related to [transformation](title).
+    - I need some procurements in [supply chain](title).
+    - I need procurements in [aerospace](title).
 
 
 
@@ -168,6 +553,11 @@ lookup:
     - Advice on IT Outsourcing and Business Transformation
     - IT Software Licensing and Asset Management
     - How to Manage a Software Licensing Audit
+    - M&A
+    - M and A
+    - IT
+    - Suppy Chain
+    - Energy
 
   skill:
     - Transformation
@@ -202,6 +592,18 @@ lookup:
     - Logistics
     - Aviation
     - Transport
+    - Healthcare
+    - Pharmaceutical
+    - Finance
+    - Consulting
+    - Private Sector
+    - Legal
+    - Manufacturing
+    - Retail
+    - Education
+    - Aerospace
+    - BioScience
+    - Various
 
   sector:
     - Private

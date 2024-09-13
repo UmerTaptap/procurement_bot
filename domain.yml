@@ -1,45 +1,88 @@
 version: "3.1"
 
 intents:
-  - ask_services
-  - ask_procurements
-  - ask_expertises
-  - ask_keywords
-  - ask_industries
-  - ask_sectors
-  - ask_challenges
-  - ask_descriptions
-  - ask_experiences
-  - ask_all
-  - ask_information
+  - greet
+  - goodbye
+  - thank_you
+  - natural_query
+  - irrelevant
+  - introduction_query
+  - ask_industries_covered
+  - ask_industry_specific
+  - ask_sectors_covered
+  - ask_procurements_by_sector
+  - ask_procurements_by_industry_and_sector
+  - ask_procurement_search_by_title
 
 
 entities:
+  - industry
+  - sector
   - title
 
 
 slots:
+
+  industry:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: industry
+    influence_conversation: false
+
+  sector:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: sector
+    influence_conversation: false    
 
   title:
     type: text
     mappings:
     - type: from_entity
       entity: title
-    influence_conversation: false
+    influence_conversation: false       
 
 responses:
   utter_fallback:
     - text: "Sorry, I couldn't provide the information you're looking for. Can you please rephrase your question or ask about something else?"
 
+  utter_greet:
+    - text: "Hello! How can I assist you today? If you have any questions or need information, feel free to ask."
+    - text: "Hi there! What can I do for you today?"
+    - text: "Hey! How can I help you? Just let me know what you need."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a fantastic day! If you need any help later, don’t hesitate to reach out."
+    - text: "Bye! Take care and have a great day ahead."
+    - text: "Farewell! I hope you have a wonderful day. See you next time!"
+
+  utter_thank_you:
+    - text: "You're welcome! If there's anything else you need, just let me know."
+    - text: "No problem at all! I’m glad I could help. If you need more assistance, just ask."
+    - text: "My pleasure! I’m here to assist you with anything else you might need."
+
+  utter_natural_query:
+    - text: "Got it! If you have any specific questions or need more details, feel free to ask."
+    - text: "Understood. Let me know if you need further information or have any queries."
+    - text: "Alright. If there's anything specific you need help with, just let me know."
+
+  utter_irrelevant:
+    - text: "I’m a virtual assistant designed to help you find and search for procurements across various industries and sectors. With access to over 500 procurements, I can provide detailed information and assist you in locating relevant opportunities. How can I assist you today?"
+    - text: "I’m here to help you navigate through a vast database of procurements available in different industries and expertise areas. Whether you’re looking for procurement opportunities or need information about specific sectors, I’m here to assist. What would you like to know more about?"
+    - text: "I specialize in providing information about procurements across a wide range of sectors and expertise. With our comprehensive database of over 500 procurements, I can help you find detailed and relevant information based on your needs. How can I assist you today?"
+    - text: "As an assistant focused on procurement information, I can help you search for and explore various procurement opportunities available across different industries. If you need details about specific procurements or want to know more about a certain sector, feel free to ask!"
+    - text: "My primary role is to assist you in finding and searching for procurements in various sectors and industries. With a broad range of over 500 procurements at my disposal, I’m here to provide the information you need. Let me know how I can help with your procurement search!"
+    - text: "I’m here to support your search for procurement opportunities across multiple industries and expertise areas. With access to a comprehensive list of procurements, I can help you locate and understand relevant procurement information. How can I assist you in your search today?"
+
+
 actions:
-  - action_list_services
-  - action_list_procurements
-  - action_list_expertise
-  - action_list_keywords
-  - action_list_industry
-  - action_list_sector
-  - action_list_challenges
-  - action_list_description
-  - action_list_experience
-  - action_list_all
-  - action_provide_information
+  - action_ask_industries_covered
+  - actions_ask_industry_specific
+  - action_ask_sectors_covered
+  - action_ask_procurements_by_sector
+  - action_ask_procurements_by_industry_and_sector
+  - action_ask_procurement_search_by_title
+  - action_handle_irrelevant
+  - action_handle_introduction_queries

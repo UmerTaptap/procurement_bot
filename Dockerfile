@@ -1,20 +1,16 @@
-# Use Rasa's official image as the base image
-FROM rasa/rasa:3.0.0
+# Use the correct base image for Ubuntu
+FROM ubuntu:18.04
 
-# Set the working directory in the Docker container
-WORKDIR /app
+# Update and install Python3, pip, and Rasa
+RUN apt-get update && apt-get install -y python3 python3-pip && \
+    python3 -m pip install --no-cache --upgrade pip && \
+    pip3 install --no-cache rasa
 
-# Copy all the files from your local machine to the container
-COPY . /app
+# Copy app directory to the container
+ADD ./app/
 
-# Install any Python dependencies (if you have a requirements.txt file)
-RUN pip install --no-cache-dir -r requirements.txt
+# Set executable permission for your script
+RUN chmod +x /app/start_services.sh
 
-# Train the Rasa model (optional, if not pre-trained)
-RUN rasa train
-
-# Expose port 5005 to access Rasa's API
-EXPOSE 5005
-
-# Start the Rasa server with API enabled and CORS set to "*"
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
+# Default command to start your services
+CMD ["/app/start_services.sh"]

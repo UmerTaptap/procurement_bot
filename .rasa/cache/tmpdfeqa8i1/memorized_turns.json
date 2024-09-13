@@ -1,0 +1,9 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJwtisEJgDAMAFfpAE7QVURCiRGCGkuSClK6uwH93XE39zGlXpVuKOh8SU79A5ByUk6/HGxOEm8z0nhYQj2y7cCyNnN9wCohb4xjLC/aJSIz": "actions_ask_industry_specific",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fmZdSWlxSVBlfXJCanJmWmVxLlJnF8dg1E2tHLADRXkle": "action_listen",
+    "eJwtisEJgDAMAFfpAE7QVURCafMIaipJ2k/J7gb0d8fdvnxL6xGcUKpR55zWB8Dlxpx+uUgNOd6hKPEQh1pkPYG4DTUhVKh9omBzP178PSKd": "action_ask_industries_covered",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fmZdSWlxSlJlaHJ+cX5ZalJpSS5yhODQTbUksAGPkSik=": "action_listen"
+  }
+}

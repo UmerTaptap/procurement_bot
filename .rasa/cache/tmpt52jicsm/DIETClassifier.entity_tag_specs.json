@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-industry",
+      "2": "I-industry",
+      "3": "L-industry",
+      "4": "U-industry",
+      "5": "B-sector",
+      "6": "I-sector",
+      "7": "L-sector",
+      "8": "U-sector",
+      "9": "B-title",
+      "10": "I-title",
+      "11": "L-title",
+      "12": "U-title",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-industry": 1,
+      "I-industry": 2,
+      "L-industry": 3,
+      "U-industry": 4,
+      "B-sector": 5,
+      "I-sector": 6,
+      "L-sector": 7,
+      "U-sector": 8,
+      "B-title": 9,
+      "I-title": 10,
+      "L-title": 11,
+      "U-title": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

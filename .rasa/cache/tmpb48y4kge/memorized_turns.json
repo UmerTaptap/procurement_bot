@@ -1,0 +1,29 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0tjYWAFwgHUA=": "utter_thank_you",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0loA5pSUlqUXxCOX4TIoFAO+LOcg=": "action_listen",
+    "eJwtisEJgDAMAFfpAE7QVURCiRGCGkuSClK6uwH93XE39zGlXpVuKOh8SU79A5ByUk6/HGxOEm8z0nhYQj2y7cCyNnN9wCohb4xjLC/aJSIz": "actions_ask_industry_specific",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fmZdSWlxSVBlfXJCanJmWmVxLlJnF8dg1E2tHLADRXkle": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohL7GktCgxJ76wNLWosrY2FgDVRx76": "utter_natural_query",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohL7GktCgxJ76wNLWospaAWaUlJalF8ahaCJkYCwDaGz72": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJwtitEJgDAMBVfpAE7QVURCLQGDNS1JKkjp7gb07927W8dcwmiCN6RsVDmG8Q3gdGEMPxRSQ/a2K4o3xI7mWk9oUnMXvPwAxST5gP0BIys45/YCRRsmUA==": "action_ask_procurement_search_by_title",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fUJSfXFqUmgsUiC9OTSxKzohPqowvySzJSa0lznRCppBubSwA6LRVQg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohs6goNSe1LDGvpLY2FgB50B2q": "action_handle_irrelevant",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohs6goNSe1LDGvpJY4gzIS81JyUuOR9OE1MxYAhXM+Gw==": "action_listen",
+    "eJwtitEJwCAMBVdxgE7gKqUEq/mQ1ihJLIi4ewPt37t3t8+1udkYHwhRcyXv5jeAQkHvfrizKJK1XZCtyWSopuWCxjV2xmKHwDkgU+qiPCBQAsGoldc6XokqKc8=": "action_ask_procurements_by_industry_and_sector",
+    "eJydTtsJgDAMXKUDOIGriITa5qOoaUlSoZTubkAHEP/uxd0tfUyuF8YLfNCUaXb9AUD+xNm95EiiSJatgmyZREbVbNmhcA6V8TRBYGuQKFZRbuApgmDQzOPbyte2/zfWG6pDX78=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytbY2FgAh+hxX": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytZaAKaUlJalF8TDFuE2JBQCMqTcN": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnJpckl9UHJ+cX5ZalJpSWxsLAJV2IVY=": "action_ask_sectors_covered",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnJpckl9UHJ+cX5ZalJpSS5yJ2HQSZ3wsAMfmRlQ=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEoBSBflp5RCFBWWphZV1tbGAgB20CEl": "action_handle_introduction_queries",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEoBSBflp5RCFBWWphZV1hJnYEZiXkpOajyG/szUYuJsiQUAmt5JVA==": "action_listen",
+    "eJwtisEJgDAMAFfpAE7QVURCafMIaipJ2k/J7gb0d8fdvnxL6xGcUKpR55zWB8Dlxpx+uUgNOd6hKPEQh1pkPYG4DTUhVKh9omBzP178PSKd": "action_ask_industries_covered",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fmZdSWlxSlJlaHJ+cX5ZalJpSS5yhODQTbUksAGPkSik=": "action_listen",
+    "eJwtitEJwCAMBVdxgE7gKqUElXxIayJJLBRx9wbav3fvbp9rC7ML3pCKVaYY5jeAUsMYfriqGpK3Q1G8qeRorvWELlyGYPNDIT+gWIxlreMFi0YkXA==": "action_ask_procurements_by_sector",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fUJSfXFqUmgsUKI5PqowvTk0uyS+qJc5gPAaQZFksABq1T2Y=": "action_listen"
+  }
+}
