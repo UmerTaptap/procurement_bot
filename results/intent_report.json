@@ -1,0 +1,105 @@
+{
+  "ask_industry_specific": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 52,
+    "confused_with": {}
+  },
+  "ask_procurements_by_sector": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 24,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30,
+    "confused_with": {}
+  },
+  "irrelevant": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 29,
+    "confused_with": {}
+  },
+  "introduction_query": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 48,
+    "confused_with": {}
+  },
+  "natural_query": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 28,
+    "confused_with": {}
+  },
+  "ask_procurements_by_industry_and_sector": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 31,
+    "confused_with": {}
+  },
+  "ask_procurement_search_by_title": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 64,
+    "confused_with": {}
+  },
+  "ask_industries_covered": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 32,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 29,
+    "confused_with": {}
+  },
+  "thank_you": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 25,
+    "confused_with": {}
+  },
+  "ask_sectors_covered": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 33,
+    "confused_with": {}
+  },
+  "accuracy": 1.0,
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 425
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 425
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 425
+  }
+}
