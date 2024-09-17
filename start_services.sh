@@ -1,7 +1,9 @@
 cd app/
-# Start rasa server with nlu model
-rasa run --model models --enable-api --cors "*" --debug \
-         -p $PORT
+# Start Rasa server with NLU model
+rasa run --model models --enable-api --cors "*" --debug -p $PORT &
 
-# # Start Rasa action server
-# rasa run actions --debug
+# Optional: Start the Rasa action server if you have custom actions
+rasa run actions --debug &
+
+# Wait for both services
+wait
