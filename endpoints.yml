@@ -1,5 +1,5 @@
 action_endpoint:
-  url: "http://localhost:5055/webhook"
+  url: "https://procurementbotapp-9ff6ad95cff4.herokuapp.com/webhook"
 # This file contains the different endpoints your bot can use.
 
 # Server where the models are pulled from.
