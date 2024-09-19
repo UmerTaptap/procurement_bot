@@ -10,7 +10,7 @@ from rasa_sdk.events import SlotSet
 import random
 
 
-data = pd.read_csv('./data_file.csv')
+# data = pd.read_csv('./data_file.csv')
 
 
 logger = logging.getLogger(__name__)

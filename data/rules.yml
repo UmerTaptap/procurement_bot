@@ -31,18 +31,15 @@ rules:
   - intent: introduction_query
   - action: action_handle_introduction_queries  
 
-
-
-
 - rule: Provide Information About Covered Industries
   steps:
   - intent: ask_industries_covered
   - action: action_ask_industries_covered
 
 - rule: Provide Information About Specific Industries
-steps:
-- intent: ask_industry_specific
-- action: actions_ask_industry_specific
+  steps:
+  - intent: ask_industry_specific
+  - action: actions_ask_industry_specific
 
 - rule: Provide Information About Covered Sectors
   steps:
